@@ -6,7 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		457920CE2CC2A33600A2A801 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457920CD2CC2A33500A2A801 /* WidgetKit.framework */; };
+		457920D02CC2A33600A2A801 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457920CF2CC2A33600A2A801 /* SwiftUI.framework */; };
+		457920E12CC2A33700A2A801 /* Simple Mind Widgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 457920CB2CC2A33500A2A801 /* Simple Mind Widgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
+		457920DF2CC2A33700A2A801 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 459CEF262CC17E4500D2DA6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 457920CA2CC2A33500A2A801;
+			remoteInfo = WidgetExtension;
+		};
 		459CEF3F2CC17E4600D2DA6A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 459CEF262CC17E4500D2DA6A /* Project object */;
@@ -23,13 +36,49 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		457920E62CC2A33700A2A801 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				457920E12CC2A33700A2A801 /* Simple Mind Widgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		457920CB2CC2A33500A2A801 /* Simple Mind Widgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Simple Mind Widgets.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		457920CD2CC2A33500A2A801 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		457920CF2CC2A33600A2A801 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		457920E72CC2A45C00A2A801 /* WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetExtension.entitlements; sourceTree = "<group>"; };
 		459CEF2E2CC17E4500D2DA6A /* Simple Mind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Mind.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		459CEF3E2CC17E4600D2DA6A /* Simple MindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple MindTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		459CEF482CC17E4600D2DA6A /* Simple MindUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple MindUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		457920E22CC2A33700A2A801 /* Exceptions for "Widget" folder in "Simple Mind Widgets" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 457920CA2CC2A33500A2A801 /* Simple Mind Widgets */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		457920D12CC2A33600A2A801 /* Widget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				457920E22CC2A33700A2A801 /* Exceptions for "Widget" folder in "Simple Mind Widgets" target */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
 		459CEF302CC17E4500D2DA6A /* Simple Mind */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Simple Mind";
@@ -48,6 +97,15 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		457920C82CC2A33500A2A801 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457920D02CC2A33600A2A801 /* SwiftUI.framework in Frameworks */,
+				457920CE2CC2A33600A2A801 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		459CEF2B2CC17E4500D2DA6A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -72,12 +130,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		457920CC2CC2A33500A2A801 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				457920CD2CC2A33500A2A801 /* WidgetKit.framework */,
+				457920CF2CC2A33600A2A801 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		459CEF252CC17E4500D2DA6A = {
 			isa = PBXGroup;
 			children = (
+				457920E72CC2A45C00A2A801 /* WidgetExtension.entitlements */,
 				459CEF302CC17E4500D2DA6A /* Simple Mind */,
 				459CEF412CC17E4600D2DA6A /* Simple MindTests */,
 				459CEF4B2CC17E4600D2DA6A /* Simple MindUITests */,
+				457920D12CC2A33600A2A801 /* Widget */,
+				457920CC2CC2A33500A2A801 /* Frameworks */,
 				459CEF2F2CC17E4500D2DA6A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +158,7 @@
 				459CEF2E2CC17E4500D2DA6A /* Simple Mind.app */,
 				459CEF3E2CC17E4600D2DA6A /* Simple MindTests.xctest */,
 				459CEF482CC17E4600D2DA6A /* Simple MindUITests.xctest */,
+				457920CB2CC2A33500A2A801 /* Simple Mind Widgets.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +166,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		457920CA2CC2A33500A2A801 /* Simple Mind Widgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 457920E32CC2A33700A2A801 /* Build configuration list for PBXNativeTarget "Simple Mind Widgets" */;
+			buildPhases = (
+				457920C72CC2A33500A2A801 /* Sources */,
+				457920C82CC2A33500A2A801 /* Frameworks */,
+				457920C92CC2A33500A2A801 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				457920D12CC2A33600A2A801 /* Widget */,
+			);
+			name = "Simple Mind Widgets";
+			packageProductDependencies = (
+			);
+			productName = WidgetExtension;
+			productReference = 457920CB2CC2A33500A2A801 /* Simple Mind Widgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		459CEF2D2CC17E4500D2DA6A /* Simple Mind */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 459CEF522CC17E4600D2DA6A /* Build configuration list for PBXNativeTarget "Simple Mind" */;
@@ -102,10 +195,12 @@
 				459CEF2A2CC17E4500D2DA6A /* Sources */,
 				459CEF2B2CC17E4500D2DA6A /* Frameworks */,
 				459CEF2C2CC17E4500D2DA6A /* Resources */,
+				457920E62CC2A33700A2A801 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				457920E02CC2A33700A2A801 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				459CEF302CC17E4500D2DA6A /* Simple Mind */,
@@ -173,6 +268,9 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					457920CA2CC2A33500A2A801 = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					459CEF2D2CC17E4500D2DA6A = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -203,11 +301,19 @@
 				459CEF2D2CC17E4500D2DA6A /* Simple Mind */,
 				459CEF3D2CC17E4600D2DA6A /* Simple MindTests */,
 				459CEF472CC17E4600D2DA6A /* Simple MindUITests */,
+				457920CA2CC2A33500A2A801 /* Simple Mind Widgets */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		457920C92CC2A33500A2A801 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		459CEF2C2CC17E4500D2DA6A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +338,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		457920C72CC2A33500A2A801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		459CEF2A2CC17E4500D2DA6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +369,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		457920E02CC2A33700A2A801 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 457920CA2CC2A33500A2A801 /* Simple Mind Widgets */;
+			targetProxy = 457920DF2CC2A33700A2A801 /* PBXContainerItemProxy */;
+		};
 		459CEF402CC17E4600D2DA6A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 459CEF2D2CC17E4500D2DA6A /* Simple Mind */;
@@ -269,6 +387,68 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		457920E42CC2A33700A2A801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7VH47ZWV4T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Widget;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Reading Health data to track against your goals and use in widgets.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Reading Health data to track against your goals and use in widgets.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "TheGeekForge.Simple-Mind.Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		457920E52CC2A33700A2A801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7VH47ZWV4T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Widget;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Reading Health data to track against your goals and use in widgets.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Reading Health data to track against your goals and use in widgets.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "TheGeekForge.Simple-Mind.Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		459CEF502CC17E4600D2DA6A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -393,11 +573,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Simple Mind/Simple Mind.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Simple Mind/Preview Content\"";
+				DEVELOPMENT_TEAM = 7VH47ZWV4T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Simple-Mind-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Simple Mind";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Reading Health data to track against your goals and use in widgets.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Reading Health data to track against your goals and use in widgets.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -408,8 +595,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "WinterShop.Simple-Mind";
+				PRODUCT_BUNDLE_IDENTIFIER = "TheGeekForge.Simple-Mind";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -421,11 +609,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Simple Mind/Simple Mind.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Simple Mind/Preview Content\"";
+				DEVELOPMENT_TEAM = 7VH47ZWV4T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Simple-Mind-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Simple Mind";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Reading Health data to track against your goals and use in widgets.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Reading Health data to track against your goals and use in widgets.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -436,8 +631,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "WinterShop.Simple-Mind";
+				PRODUCT_BUNDLE_IDENTIFIER = "TheGeekForge.Simple-Mind";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -515,6 +711,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		457920E32CC2A33700A2A801 /* Build configuration list for PBXNativeTarget "Simple Mind Widgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				457920E42CC2A33700A2A801 /* Debug */,
+				457920E52CC2A33700A2A801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		459CEF292CC17E4500D2DA6A /* Build configuration list for PBXProject "Simple Mind" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
